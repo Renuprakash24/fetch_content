@@ -3,8 +3,8 @@ include(FetchContent)
 
 FetchContent_Declare(
     platform
-    GIT_REPOSITORY 
-    GIT_TAG         
+    GIT_REPOSITORY  https://github.com/Renuprakash24/prgrmwithcmake.git
+    GIT_TAG   main      
 )
 
 
