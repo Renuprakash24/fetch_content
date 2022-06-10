@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.16.3)
 
+project(cmake)
+
 
 
 include(FetchContent)
@@ -18,6 +20,10 @@ FetchContent_GetProperties(platform)
 if (NOT platform_POPULATED)
     FetchContent_Populate(platform)
 endif ()
+
+FetchContent_MakeAvailable(platform)
+
+add_executable(${cmake} src/c++code.cpp)
 
 
 
