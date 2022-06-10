@@ -8,7 +8,9 @@ include(FetchContent)
 FetchContent_Declare(
     platform
     GIT_REPOSITORY  https://github.com/Renuprakash24/prgrmwithcmake.git
-    GIT_TAG   main      
+    GIT_TAG   main
+    CONFIGURE_COMMAND   ""
+    BUILD_COMMAND       ""
 )
 
 
@@ -17,5 +19,7 @@ if (NOT platform_POPULATED)
     FetchContent_Populate(platform)
 endif ()
 
-add_library(MyLibrary /root/.jenkins/workspace/cmake6/_deps/platform-src/c++code.cpp)
+set(TESTS OFF CACHE BOOL "Switch off platform Test build")
+FetchContent_MakeAvailable(platform)
+
 
