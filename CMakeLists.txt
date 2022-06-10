@@ -19,7 +19,7 @@ if (NOT platform_POPULATED)
     FetchContent_Populate(platform)
 endif ()
 
-add_subdirectory(${<platform>/root/.jenkins/workspace/cmake6/_deps/platform-src/c++code.cpp})
+add_subdirectory(${/root/.jenkins/workspace/cmake6/_deps/platform-src/c++code.cpp})
 
 
 
