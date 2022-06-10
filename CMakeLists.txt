@@ -22,4 +22,7 @@ endif ()
 set(TESTS OFF CACHE BOOL "Switch off platform Test build")
 FetchContent_MakeAvailable(platform)
 
+add_subdirectory(${<platform>/root/.jenkins/workspace/cmake6/_deps/platform-src/c++code.cpp})
+} 
+
 
