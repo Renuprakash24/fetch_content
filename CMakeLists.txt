@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16.3)
 
-project(MyLibrary)
+
 
 include(FetchContent)
 
@@ -10,7 +10,7 @@ FetchContent_Declare(
     GIT_REPOSITORY  https://github.com/Renuprakash24/prgrmwithcmake.git
     GIT_TAG   main
     CONFIGURE_COMMAND   ""
-    BUILD_COMMAND       ""
+    BUILD_COMMAND       "c++code.cpp"
 )
 
 
@@ -19,7 +19,7 @@ if (NOT platform_POPULATED)
     FetchContent_Populate(platform)
 endif ()
 
-add_subdirectory(root/.jenkins/workspace/cmake6/_deps/platform-src/c++code.cpp)
+
 
 
 
