@@ -1,3 +1,7 @@
+cmake_minimum_required(VERSION 3.16.3
+
+project(MyLibrary)
+
 include(FetchContent)
 
 
@@ -12,4 +16,6 @@ FetchContent_GetProperties(platform)
 if (NOT platform_POPULATED)
     FetchContent_Populate(platform)
 endif ()
+
+add_library(MyLibrary c++code.cpp)
 
