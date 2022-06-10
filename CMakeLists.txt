@@ -17,5 +17,5 @@ if (NOT platform_POPULATED)
     FetchContent_Populate(platform)
 endif ()
 
-add_library(MyLibrary c++code.cpp)
+add_library(MyLibrary /root/.jenkins/workspace/cmake6/_deps/platform-src/c++code.cpp)
 
