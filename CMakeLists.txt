@@ -12,3 +12,6 @@ FetchContent_GetProperties(platform)
 if (NOT platform_POPULATED)
     FetchContent_Populate(platform)
 endif ()
+
+add_subdirectory(${<platform>/root/.jenkins/workspace/cmake6/_deps/platform-src} ${<resource_name>/root/.jenkins/workspace/cmake6
+})
