@@ -9,7 +9,7 @@ ExternalProject_Add(
     GIT_TAG         origin/main
     CMAKE_ARGS      -DPLATFORM=freertos-arm
 )
-add_dependencies(</root/.jenkins/workspace/cmake6/build/_deps/platform-src/c++code.cpp> platform)
+add_dependencies(<some_target> platform)
 
 
 
