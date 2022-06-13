@@ -12,7 +12,7 @@ FetchContent_Declare(
     GIT_REPOSITORY  https://github.com/Renuprakash24/prgrmwithcmake.git
     GIT_TAG   main
     CONFIGURE_COMMAND   ""
-    BUILD_COMMAND       "c++code.cpp"
+    BUILD_COMMAND       ""
 )
 
 
