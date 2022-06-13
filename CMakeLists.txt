@@ -11,7 +11,7 @@ ExternalProject_Add(
 )
 
 add_executable(c++code.cpp)
-add_dependencies(<c++code.cpp> platform)
+
 
 
 
