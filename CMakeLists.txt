@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16.3)
 
-
+project(hello)
 
 include(ExternalProject)
 ExternalProject_Add(
@@ -10,7 +10,7 @@ ExternalProject_Add(
     CMAKE_ARGS      -DPLATFORM=freertos-arm
 )
 
-add_executable(c++code.cpp)
+add_executable(hello c++code.cpp)
 
 
 
