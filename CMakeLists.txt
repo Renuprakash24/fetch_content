@@ -1,13 +1,25 @@
-cmake_minimum_required(VERSION 3.16.3)
+project(cmake)
 
-include(ExternalProject)
-ExternalProject_Add(
+
+
+include(FetchContent)
+
+
+FetchContent_Declare(
     platform
     GIT_REPOSITORY  https://github.com/Renuprakash24/prgrmwithcmake.git
-    GIT_TAG         origin/main
-    CMAKE_ARGS      -DPLATFORM=freertos-arm
+    GIT_TAG   main
+    CONFIGURE_COMMAND   ""
+    BUILD_COMMAND       ""
 )
 
+
+FetchContent_GetProperties(platform)
+if (NOT platform_POPULATED)
+    FetchContent_Populate(platform)
+endif ()
+
+FetchContent_MakeAvailable(platform)
 
 
 
