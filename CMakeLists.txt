@@ -23,7 +23,7 @@ endif ()
 
 FetchContent_MakeAvailable(platform)
 
-add_executable(${cmake} root/.jenkins/workspace/cmake6/_deps/platform-src/c++code.cpp)
+
 
 
 
