@@ -23,6 +23,8 @@ endif ()
 
 FetchContent_MakeAvailable(platform)
 
+add_subdirectory(${<platform-populate NONE>/home/prakash/Desktop/renu/build/_deps/platform-src} ${<platform-populate NONE>/home/prakash/Desktop/renu/build/_deps/platform-build)
+
 
 
 
