@@ -2,6 +2,8 @@ project(cmake)
 
 
 
+
+
 include(FetchContent)
 
 
@@ -21,6 +23,10 @@ endif ()
 
 FetchContent_MakeAvailable(platform)
 
+set_target_properties(mytests PROPERTY
+    CXX_STANDARD 11
+)
+target_compile_options(mytests PUBLIC)
 
 
 
