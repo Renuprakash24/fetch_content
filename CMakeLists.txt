@@ -6,7 +6,7 @@ project(cmake)
 set_target_properties(platform PROPERTY
     CXX_STANDARD 11
 )
-target_compile_options(platform PUBLIC)
+
 
 
 
