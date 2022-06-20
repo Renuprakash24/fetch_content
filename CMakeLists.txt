@@ -24,7 +24,7 @@ endif ()
 
 FetchContent_MakeAvailable(platform)
 
-target_include_directories(/root/.jenkins/workspace/cmake6/_deps/platform-src/Poco)
+include_directories(/root/.jenkins/workspace/cmake6/_deps/platform-src/Poco)
 
 add_executable(cmake include/Can_main.cpp)
 
