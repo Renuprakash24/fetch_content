@@ -20,3 +20,5 @@ if(NOT depname_POPULATED)
 
   FetchContent_Populate(platform)
 endif()
+
+add_subdirectory(${platform_SOURCE_DIR} ${platform_BINARY_DIR})
