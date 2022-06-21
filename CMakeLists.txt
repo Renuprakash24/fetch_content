@@ -25,10 +25,10 @@ endif ()
 
 FetchContent_MakeAvailable(platform)
 
-FetchContent_GetProperties(depname)
+FetchContent_GetProperties(platfom)
 if(NOT depname_POPULATED)
   
-  FetchContent_Populate(depname)
+  FetchContent_Populate(platform)
 
  
 
