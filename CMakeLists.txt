@@ -25,7 +25,16 @@ endif ()
 
 FetchContent_MakeAvailable(platform)
 
+FetchContent_GetProperties(depname)
+if(NOT depname_POPULATED)
+  
+  FetchContent_Populate(depname)
 
+ 
+
+  
+  add_subdirectory(${depname_SOURCE_DIR} ${depname_BINARY_DIR})
+endif()
 
 add_executable(cmake include/Can_main.cpp)
 
