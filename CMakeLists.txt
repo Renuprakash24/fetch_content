@@ -14,14 +14,14 @@ FetchContent_Declare(
     GIT_TAG   main
     CONFIGURE_COMMAND   ""
     BUILD_COMMAND       ""
-    include_directories(/root/.jenkins/workspace/cmake6/_deps/platform-src/Poco)
+    
 )
 
 
 FetchContent_GetProperties(depname)
 if(NOT depname_POPULATED)
 
-  FetchContent_Populate(depname)
+  FetchContent_Populate(platform)
 
  
  
