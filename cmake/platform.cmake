@@ -28,16 +28,12 @@ FetchContent_GetProperties(platform)
 if(NOT depname_POPULATED)
 
   FetchContent_Populate(platform)
-
+endif()
  
  
 
   
-  add_subdirectory(${platform_SOURCE_DIR} ${platform_BINARY_DIR})
-endif()
-
-add_executable(app include/Can_main.cpp)
-target_include_directories(app PUBLIC /root/.jenkins/workspace/cmake6/build/_deps/platform-src/Poco)
+ 
 
 
 
