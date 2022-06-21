@@ -27,7 +27,7 @@ if(NOT depname_POPULATED)
  
 
   
-  add_subdirectory(${depname_SOURCE_DIR} ${depname_BINARY_DIR})
+  add_subdirectory(${/root/.jenkins/workspace/cmake6/build/_deps/platform-src/Poco} ${/root/.jenkins/workspace/cmake6/build})
 endif()
 
 
