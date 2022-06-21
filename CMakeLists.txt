@@ -3,15 +3,6 @@ cmake_minimum_required(VERSION 3.16.3)
 
 project(cmake)
 
-
-
-
-
-
-
-
-
-
 include(FetchContent)
 
 
@@ -30,3 +21,5 @@ if(NOT depname_POPULATED)
 
   FetchContent_Populate(platform)
 endif()
+
+add_subdirectory(${platform_SOURCE_DIR} ${platform_BINARY_DIR})
