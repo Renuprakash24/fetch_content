@@ -18,7 +18,7 @@ FetchContent_Declare(
 )
 
 
-FetchContent_GetProperties(depname)
+FetchContent_GetProperties(platform)
 if(NOT depname_POPULATED)
 
   FetchContent_Populate(platform)
@@ -27,7 +27,7 @@ if(NOT depname_POPULATED)
  
 
   
-  add_subdirectory(${platfom_SOURCE_DIR})
+  add_subdirectory(${depname_SOURCE_DIR} ${depname_BINARY_DIR})
 endif()
 
 
