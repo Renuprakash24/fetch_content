@@ -27,7 +27,7 @@ if(NOT depname_POPULATED)
  
 
   
-  add_subdirectory(${depname_SOURCE_DIR} ${depname_BINARY_DIR})
+  add_subdirectory(${depname_SOURCE_DIR})
 endif()
 
 
