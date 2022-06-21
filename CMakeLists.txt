@@ -27,7 +27,7 @@ if(NOT depname_POPULATED)
  
 
   
-  add_subdirectory(${<platform>_SOURCE_DIR} ${<platform>_BINARY_DIR})
+  add_subdirectory(${platform_SOURCE_DIR} ${platform_BINARY_DIR})
 endif()
 
 
