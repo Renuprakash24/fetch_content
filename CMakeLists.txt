@@ -4,4 +4,4 @@ include(cmake/platform.cmake)
 
 
 
-add_subdirectory(${platform_SOURCE_DIR} ${platform_BINARY_DIR})
+add_subdirectory(${platform_SOURCE_DIR} ${Poco_BINARY_DIR})
