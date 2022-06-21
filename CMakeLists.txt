@@ -27,7 +27,7 @@ if(NOT depname_POPULATED)
  
 
   
-  add_subdirectory(${depname_SOURCE_DIR})
+  add_subdirectory(${platfom_SOURCE_DIR})
 endif()
 
 
