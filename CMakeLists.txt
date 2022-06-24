@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16.3)
 
 project(cmake)
 
-include_directories($(include/CMake.txt))
+
 
 include(FetchContent)
 
