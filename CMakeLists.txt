@@ -23,6 +23,12 @@ FetchContent_GetProperties(platform)
 if (NOT platform_POPULATED)
    
 add_subdirectory(${/root/.jenkins/workspace/15poco/include/Can_main.cpp} ${/root/.jenkins/workspace/15poco/include})
+
+include_directories(${PROJECT_SOURCE_DIR}/include)
+
+include_directories(${PROJECT_SOURCE_DIR}/Poco)
+
+add_executable(app Can_main.cpp)
    
 
    
