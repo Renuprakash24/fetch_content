@@ -13,3 +13,16 @@ FetchContent_Declare(
     GIT_TAG   main
     CONFIGURE_COMMAND   ""
     BUILD_COMMAND       ""
+    
+)
+    
+FetchContent_MakeAvailable(platform)
+    
+FetchContent_GetProperties(platform)
+if (NOT googletest_POPULATED)
+    FetchContent_Populate(platform)
+
+   
+
+    add_subdirectory(${platform_SOURCE_DIR} ${platform_BINARY_DIR})
+endif()
