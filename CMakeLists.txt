@@ -22,7 +22,7 @@ FetchContent_MakeAvailable(platform)
 FetchContent_GetProperties(platform)
 if (NOT platform_POPULATED)
    
-add_subdirectory(${/root/.jenkins/workspace/15poco/include/Can_main.cpp} ${/root/.jenkins/workspace/15poco/include})
+add_subdirectory(${platform_SOURCE_DIR} ${platform_BINARY_DIR})
 
 
    
