@@ -15,8 +15,7 @@ FetchContent_Declare(
     BUILD_COMMAND       ""
     
 )
-    
-FetchContent_MakeAvailable(platform)
+
     
 FetchContent_GetProperties(platform)
 if (NOT googletest_POPULATED)
