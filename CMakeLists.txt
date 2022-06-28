@@ -21,7 +21,7 @@ FetchContent_MakeAvailable(platform)
     
 
    
-add_subdirectory(${platform_SOURCE_DIR} ${platform_BINARY_DIR})
+add_subdirectory(${platform_/root/.jenkins/workspace/15poco/include/Can_main.cpp} ${platform_/root/.jenkins/workspace/15poco/include})
 
 
    
