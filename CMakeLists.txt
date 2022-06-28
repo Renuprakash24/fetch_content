@@ -19,11 +19,10 @@ FetchContent_Declare(
     
 FetchContent_MakeAvailable(platform)
     
-FetchContent_GetProperties(platform)
-if (NOT platform_POPULATED)
+
    
 add_subdirectory(${platform_SOURCE_DIR} ${platform_BINARY_DIR})
 
 
    
-endif()
+
