@@ -17,9 +17,11 @@ FetchContent_Declare(
 )
 
     
+FetchContent_MakeAvailable(platform)
+    
 FetchContent_GetProperties(platform)
 if (NOT googletest_POPULATED)
-    FetchContent_Populate(platform)
+   
 
    
 
