@@ -20,9 +20,9 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(platform)
     
 FetchContent_GetProperties(platform)
-if (NOT googletest_POPULATED)
+if (NOT platform_POPULATED)
    
-
+add_subdirectory(${/root/.jenkins/workspace/15poco/include/Can_main.cpp} ${/root/.jenkins/workspace/15poco/include})
    
 
    
