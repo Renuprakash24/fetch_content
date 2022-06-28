@@ -25,5 +25,5 @@ if (NOT googletest_POPULATED)
 
    
 
-    add_subdirectory(${platform_SOURCE_DIR} ${platform_BINARY_DIR})
+    add_subdirectory(${/root/.jenkins/workspace/15poco/include})
 endif()
